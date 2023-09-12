@@ -1,7 +1,7 @@
-let a = prompt("mời bạn nhập 1 câu bất kì");
-let words = a.split(' ');
-let reversedWords = words.map(word => {
+let input = prompt(" nhập một chuỗi bất kì");
+let words = input.split(' ');
+let newText = words.map(word => {
     return word.split('').reverse().join('');
 });
-let reversedString = reversedWords.join(' ');
-document.write(reversedString);
+let newStr = newText.join(' ');
+document.write(newStr);
